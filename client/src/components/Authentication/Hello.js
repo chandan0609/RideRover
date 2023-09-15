@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
 import userData from '../../data/user';
 import './Hello.css';
